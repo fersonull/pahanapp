@@ -6,7 +6,7 @@ include 'app/views/partials/banner.php';
 ?>
 <main class="container">
     <section>
-        
+        <!-- TODO: Make a 404 View Page -->
     </section>
 </main>
 
