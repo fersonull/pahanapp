@@ -8,39 +8,20 @@ include 'app/views/partials/banner.php';
     <p>This is the main content</p>
 
     <div class="row mb-4 gap-">
-        <div class="col-12 col-lg-4">
-            <div class="card bg-body-secondary">
-                <img src="https://placehold.co/400" alt="" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo eius eaque deleniti,
-                        saepe provident earum similique voluptatem corrupti voluptates?
-                    </p>
-                </div>
+        <?php foreach ($posts as $post): ?>
+            <div class="col-12 col-lg-4">
+                <a href="/posts?id=<?= $post['post_id'] ?>" class="text-decoration-none">
+                    <div class="card bg-body-secondary border border-primary">
+                        <img src="https://placehold.co/400" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <?= $post['content'] ?>
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
-        <div class="col-12 col-lg-4">
-            <div class="card bg-body-secondary">
-                <img src="https://placehold.co/400" alt="" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo eius eaque deleniti,
-                        saepe provident earum similique voluptatem corrupti voluptates?
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4">
-            <div class="card bg-body-secondary">
-                <img src="https://placehold.co/400" alt="" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo eius eaque deleniti,
-                        saepe provident earum similique voluptatem corrupti voluptates?
-                    </p>
-                </div>
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
 </main>
 
