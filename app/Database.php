@@ -21,4 +21,11 @@ class Database
 
         return $stmt->fetch();
     }
+
+    public function getAllPosts()
+    {
+        $query = $this->query("SELECT * FROM posts");
+
+        print_r($query);
+    }
 }
