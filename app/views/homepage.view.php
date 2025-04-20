@@ -7,8 +7,8 @@ include 'app/views/partials/banner.php';
 <main class="container">
     <p>This is the main content</p>
 
-    <div class="row mb-4">
-        <div class="col">
+    <div class="row mb-4 gap-">
+        <div class="col-12 col-lg-4">
             <div class="card bg-body-secondary">
                 <img src="https://placehold.co/400" alt="" class="card-img-top">
                 <div class="card-body">
@@ -19,7 +19,7 @@ include 'app/views/partials/banner.php';
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4">
             <div class="card bg-body-secondary">
                 <img src="https://placehold.co/400" alt="" class="card-img-top">
                 <div class="card-body">
@@ -30,7 +30,7 @@ include 'app/views/partials/banner.php';
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4">
             <div class="card bg-body-secondary">
                 <img src="https://placehold.co/400" alt="" class="card-img-top">
                 <div class="card-body">
